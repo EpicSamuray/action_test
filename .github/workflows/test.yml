@@ -19,8 +19,7 @@ jobs:
     # Als dritter Schritt führen wir den Maven-Build durch
     - name: Build with Maven, Run Tests, Package and Integration-Tests
       run: mvn verify
-    
-        - name: jacoco-badge-generator
+    - name: jacoco-badge-generator
       uses: cicirello/jacoco-badge-generator@v2
     - name: Log coverage percentage
       run: |
